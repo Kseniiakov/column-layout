@@ -34,6 +34,28 @@
   font-size: 21px;
 }
 
+/* form */
+
+.form {
+  background-color: #EEEFF1;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.my-form-input {
+  flex-grow: 1;
+}
+
+.input-message {
+  width: 100%;
+}
+
+/* media */
+
 @media screen and (max-width: 992px) {
   .numbers-row {
     display: flex;
