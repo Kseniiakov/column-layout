@@ -64,10 +64,10 @@
 
       <section class="form">
         <div class="container">
-          <div class="row">
-            <section class="col-lg-6">
-              <h2>Хотите веб-сайт?</h2>
-              <p>
+          <div class="row justify-content-center">
+            <section class="col-lg-5 form-wrapper">
+              <h2 class="header form-header">Хотите веб-сайт?</h2>
+              <p class="form-paragraph">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                 текстов на латинице с начала XVI века.
@@ -78,22 +78,24 @@
                   type="text"
                   name="name"
                   placeholder="Ваше имя"
+                  pattern="[A-Z][a-z]{3,20}"
                 />
                 <input
                   class="my-form-input"
                   type="email"
                   name="email"
                   placeholder="Ваш e-mail"
+                  pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
                 />
                 <textarea
                   class="my-form-input input-message"
                   name="message"
                   id=""
                   cols="30"
-                  rows="10"
+                  rows="8"
                   placeholder="Сообщение"
                 ></textarea>
-                <button type="submit">ОТПРАВИТЬ</button>
+                <button class="button form-button" type="submit">ОТПРАВИТЬ</button>
               </form>
             </section>
           </div>

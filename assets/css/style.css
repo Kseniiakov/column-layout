@@ -3,8 +3,12 @@
 
 * {
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  color: #727272;
 }
 
 .numbers {
@@ -30,8 +34,12 @@
 }
 
 .numbers-header {
-  font-weight: 600;
   font-size: 21px;
+}
+
+.numbers-header,
+.form-header {
+  font-weight: 600;
 }
 
 /* form */
@@ -40,18 +48,80 @@
   background-color: #EEEFF1;
 }
 
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-size: 32px;
+  color: #000000;
+}
+
+.form-header {
+  margin: 100px 0 50px 0;
+}
+
+.form-paragraph {
+  line-height: 26.25px;
+  text-align: center;
+  text-indent: 19px;
+}
+
 .my-form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 20px 30px;
+  justify-content: center;
+
+  margin: 65px 0 100px 0;
 }
 
 .my-form-input {
   flex-grow: 1;
+
+  background-color: #FFFFFF;
+  border: none;
+
+  padding: 18px 20px;
+
+  color: #5F5D5D;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-form-input:invalid {
+  background-color: rgb(248, 228, 228);
 }
 
 .input-message {
   width: 100%;
+  resize: none;
+}
+
+.button {
+  border: none;
+  background-color: #34547A;
+
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+
+  padding: 20px;
+
+  width: 190px;
+}
+
+.button:hover {
+  background-color: #00D5E4;
+  color: #34547A;
+}
+
+.form-button {
+  margin-top: 50px;
 }
 
 /* media */
@@ -60,5 +130,11 @@
   .numbers-row {
     display: flex;
     row-gap: 2em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header {
+    font-size: 26px;
   }
 }
