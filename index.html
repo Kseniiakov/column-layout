@@ -13,7 +13,42 @@
   <body>
     <header></header>
     <main>
-      <section class="about-me">
+      <section class="first-screen">
+        <div class="container">
+          <div class="row first-screen-first-row">
+            <div class="col-5">
+              <a class="link-logo" href="./index.html"
+              ><img class="first-screen-logo" src="./assets/imgs/WD.svg" alt="logo"
+            /></a>
+            </div>
+            <nav class="col-7 d-flex align-items-center">
+              <ul class="d-flex menu-list">
+                <li><a class="link menu-link" href="#">ГЛАВНАЯ</a></li>
+                <li><a class="link menu-link" href="#">ОБ АВТОРЕ</a></li>
+                <li><a class="link menu-link" href="#">РАБОТЫ</a></li>
+                <li><a class="link menu-link" href="#">ПРОЦЕСС</a></li>
+                <li><a class="link menu-link" href="#">КОНТАКТЫ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-5 d-flex justify-content-center align-items-center">
+              <img class="first-screen-image" src="./assets/imgs/Frame.svg" alt="laptop" />
+            </div>
+            <section class="col-7">
+              <h1 class="header first-screen-header">Дизайн и верстка</h1>
+              <p class="first-screen-paragraph">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века.
+              </p>
+              <a class="link button" href="#form">НАПИСАТЬ МНЕ</a>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-me d-flex align-items-center">
         <div class="container">
           <div class="row justify-content-center">
             <section class="col-5 about-me-wrapper">
@@ -77,7 +112,7 @@
         </div>
       </section>
 
-      <section class="form">
+      <section class="form" id="form">
         <div class="container">
           <div class="row justify-content-center">
             <section class="col-5 form-wrapper">

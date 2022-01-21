@@ -5,16 +5,113 @@
   box-sizing: border-box;
 }
 
-body {
+:root {
+  --primary-color: #34547A;
+  --primary-back-color: #EEEFF1;
+  --secondary-back-color: #F9F9F9;
+  --black-color: #000000;
+
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-size: 16px;
   color: #727272;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+.header {
+  font-size: 32px;
+  color: var(--black-color);
+
+  margin-bottom: 50px;
+}
+
+.paragraph {
+  line-height: 26.25px;
+  text-align: center;
+  text-indent: 19px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+
+  border: none;
+  background-color: var(--primary-color);
+
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+
+  padding: 20px;
+
+  width: 190px;
+}
+
+.button:hover {
+  background-color: #00D5E4;
+  color: var(--primary-color);
+}
+
+/* first-screen */
+
+.first-screen {
+  background-color: var(--primary-back-color);
+  padding: 57px 0 146px 0;
+}
+
+.first-screen-first-row {
+  padding-bottom: 140px;
+}
+
+.link-logo {
+  display: inline-block;
+}
+
+.first-screen-logo {
+  width: 96px;
+}
+
+.menu-list {
+  column-gap: 42px;
+}
+
+.menu-link {
+  color: var(--black-color);
+  letter-spacing: 0.1em;
+
+}
+
+.menu-link:hover {
+  color: var(--primary-color);
+}
+
+.first-screen-image {
+  max-width: 357px;
+}
+
+.first-screen-header {
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+.first-screen-paragraph {
+  line-height: 26.25px;
+  max-width: 540px;
+  margin: 60px 0;
 }
 
 /* about-me */
 
 .about-me {
-  background-color: #E5E5E5;
+  background-color: var(secondary-back-color);
+  height: 366px;
 }
 
 .about-me-wrapper {
@@ -58,10 +155,6 @@ body {
   text-overflow: ellipsis;
 }
 
-h2, h3 {
-  font-weight: 600;
-}
-
 /* form */
 
 .form {
@@ -74,19 +167,8 @@ h2, h3 {
   align-items: center;
 }
 
-.header {
-  font-size: 32px;
-  color: #000000;
-}
-
 .form-header {
-  margin: 100px 0 50px 0;
-}
-
-.paragraph {
-  line-height: 26.25px;
-  text-align: center;
-  text-indent: 19px;
+  margin-top: 100px;
 }
 
 .my-form {
@@ -119,25 +201,6 @@ h2, h3 {
 .input-message {
   width: 100%;
   resize: none;
-}
-
-.button {
-  border: none;
-  background-color: #34547A;
-
-  font-size: 14px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-
-  padding: 20px;
-
-  width: 190px;
-}
-
-.button:hover {
-  background-color: #00D5E4;
-  color: #34547A;
 }
 
 .form-button {
