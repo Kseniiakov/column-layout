@@ -22,6 +22,10 @@ h3 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 21px;
+}
+
 .header {
   font-size: 32px;
   color: var(--black-color);
@@ -61,6 +65,13 @@ h3 {
 .button:hover {
   background-color: #00d5e4;
   color: var(--primary-color);
+}
+
+.numbers,
+#skills,
+#video,
+.form {
+  padding: 100px 0;
 }
 
 /* first-screen */
@@ -125,13 +136,15 @@ h3 {
 
 /* numbers */
 
-.numbers {
-  background-color: #34547a;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.numbers,
+#footer {
+  background-color: var(--primary-color);
 
   color: #ffffff;
+}
 
-  padding: 100px 0;
+.numbers {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .numbers-item {
@@ -149,10 +162,6 @@ h3 {
   row-gap: 6px;
 }
 
-.numbers-header {
-  font-size: 21px;
-}
-
 .numbers-paragraph {
   max-width: 90px;
   overflow: hidden;
@@ -162,12 +171,7 @@ h3 {
 
 /* skills */
 
-.skills,
-.video {
-  padding: 100px 0;
-}
-
-.skills {
+#skills {
   background-color: var(--secondary-back-color);
 }
 
@@ -199,7 +203,7 @@ h3 {
 
 /* video */
 
-.video {
+#video {
   background-color: var(--primary-back-color);
 }
 
@@ -248,6 +252,17 @@ background-image: url(../imgs/project1.jpg);
   background-image: url(../imgs/project2.jpg);
 }
 
+/* clients */
+
+.clients {
+  background-color: var(--secondary-back-color);
+  padding: 72px 0 100px 0;
+}
+
+.clients-wrapper {
+  column-gap: 30px;
+}
+
 /* form */
 
 .form {
@@ -260,10 +275,6 @@ background-image: url(../imgs/project1.jpg);
   align-items: center;
 }
 
-.form-header {
-  margin-top: 100px;
-}
-
 .my-form {
   display: flex;
   flex-direction: row;
@@ -271,7 +282,7 @@ background-image: url(../imgs/project1.jpg);
   gap: 20px 30px;
   justify-content: center;
 
-  margin: 65px 0 100px 0;
+  margin-top: 65px;
 }
 
 .my-form-input {
@@ -298,6 +309,28 @@ background-image: url(../imgs/project1.jpg);
 
 .form-button {
   margin-top: 50px;
+}
+
+/* footer */
+
+#footer {
+  padding: 50px 0;
+}
+
+#footer a {
+  display: inline-block;
+}
+
+.footer-header {
+  margin-bottom: 21px;
+}
+
+.footer-links {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* media */
