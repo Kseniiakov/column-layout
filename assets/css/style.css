@@ -45,6 +45,12 @@ h3 {
   text-decoration: none;
 }
 
+.numbers,
+#footer,
+.button {
+  color: #ffffff;
+}
+
 .button {
   display: inline-block;
   text-align: center;
@@ -53,7 +59,6 @@ h3 {
   background-color: var(--primary-color);
 
   font-size: 14px;
-  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 
@@ -76,8 +81,13 @@ h3 {
 
 /* first-screen */
 
-.first-screen {
+.first-screen,
+#video,
+.form {
   background-color: var(--primary-back-color);
+}
+
+.first-screen {
   padding: 57px 0 146px 0;
 }
 
@@ -135,8 +145,13 @@ h3 {
 
 /* about-me */
 
-.about-me {
+.about-me,
+#skills,
+.clients {
   background-color: var(--secondary-back-color);
+}
+
+.about-me {
   padding: 119px 0 100px 0;
 }
 
@@ -151,8 +166,6 @@ h3 {
 .numbers,
 #footer {
   background-color: var(--primary-color);
-
-  color: #ffffff;
 }
 
 .numbers {
@@ -183,10 +196,6 @@ h3 {
 
 /* skills */
 
-#skills {
-  background-color: var(--secondary-back-color);
-}
-
 .bg-progress,
 .progress {
   height: 4px;
@@ -215,12 +224,9 @@ h3 {
 
 /* video */
 
-#video {
-  background-color: var(--primary-back-color);
-}
-
 .my-video {
   width: 100%;
+  max-width: 1110px;
   aspect-ratio: 16/9;
   margin-top: 57px;
 }
@@ -267,7 +273,6 @@ h3 {
 /* clients */
 
 .clients {
-  background-color: var(--secondary-back-color);
   padding: 72px 0 100px 0;
 }
 
@@ -276,10 +281,6 @@ h3 {
 }
 
 /* form */
-
-.form {
-  background-color: #eeeff1;
-}
 
 .form-wrapper {
   display: flex;
@@ -446,13 +447,10 @@ h3 {
   #burger-input:checked + .menu-list {
     display: block;
   }
-
-  /* skills */
+  
   #skills .header {
     align-self: center;
   }
-
-  /* projects */
 
   .projects-row {
     flex-flow: row wrap;
